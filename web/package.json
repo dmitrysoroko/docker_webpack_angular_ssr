@@ -1,0 +1,47 @@
+{
+  "scripts": {
+    "dev": "webpack-dev-server --config ./code/webpack.config.js --env.client",
+    "prod": "webpack --config ./code/webpack.config.js --env.client",
+    "ssr": "webpack --config ./code/webpack.config.js --env.ssr",
+    "build": "npm run prod && npm run ssr && node build/server.js"
+  },
+  "dependencies": {
+    "@angular/animations": "^5.2.1",
+    "@angular/common": "^5.2.1",
+    "@angular/compiler": "^5.2.1",
+    "@angular/core": "^5.2.1",
+    "@angular/forms": "^5.2.1",
+    "@angular/http": "^5.2.1",
+    "@angular/platform-browser": "^5.2.1",
+    "@angular/platform-browser-dynamic": "^5.2.1",
+    "@angular/platform-server": "^5.2.1",
+    "@angular/router": "^5.2.1",
+    "core-js": "^2.5.3",
+    "express": "^4.16.2",
+    "rxjs": "^5.5.6",
+    "xhr2": "^0.1.4",
+    "zone.js": "^0.8.20"
+  },
+  "devDependencies": {
+    "@angular/compiler-cli": "^5.2.1",
+    "@ngtools/webpack": "^1.9.5",
+    "@nguniversal/module-map-ngfactory-loader": "^5.0.0-beta.5",
+    "@types/express": "^4.11.0",
+    "@types/node": "^9.3.0",
+    "file-loader": "^1.1.6",
+    "raw-loader": "^0.5.1",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^2.30.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "ts-node": "^4.1.0",
+    "typescript": "^2.6.2",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.11.0",
+    "@nguniversal/express-engine": "^5.0.0-beta.5",
+    "angular-router-loader": "^0.8.2",
+    "angular-template-loader": "^0.0.2",
+    "awesome-typescript-loader": "^3.4.1",
+    "ts-loader": "^3.3.0"
+  }
+}

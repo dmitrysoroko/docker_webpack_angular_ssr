@@ -1,0 +1,23 @@
+version: '3'
+services:
+  nginx:
+    build: ./nginx
+    links:
+      - web:web
+    # - api:api
+    ports:
+      - "80:80"
+
+  web:
+    environment:
+      - COMMAND=${COMMAND:-dev}
+    build: ./web
+    volumes:
+     - ./web:/app/code
+    ports:
+      - "8080"
+
+#  api:
+#     build: ./api
+#     ports:
+#     - "8080"
